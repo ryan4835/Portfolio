@@ -1,2 +1,2 @@
 # Portfolio
-A collection of my forays into Machine Learning. 
+A collection of my adventure into Machine Learning, Networks and other exciting things. 
