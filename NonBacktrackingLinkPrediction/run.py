@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Experiment 3, REAL DATA
 
-# In[9]:
 
 
 import numpy as np
@@ -13,7 +11,6 @@ from scipy import sparse
 from NBTRsimilarity import similarity
 
 
-# In[10]:
 
 
 from sklearn import metrics
@@ -24,8 +21,6 @@ from katz_edge_predictor_sparse import katz_edge_predictor_sparse
 from Katzindexsim import katz_similarity
 import collections
 
-
-# In[11]:
 
 
 
@@ -43,7 +38,6 @@ train_file.close()
 #print(train_edges)
 
 
-# In[12]:
 
 
 G = nx.Graph(train_edges)
@@ -67,7 +61,6 @@ ax.set_xticklabels(deg)
 ax.axes.get_xaxis().set_ticks([])
 
 
-# In[5]:
 
 
 def split_to_test(E, index):
@@ -76,8 +69,6 @@ def split_to_test(E, index):
         E_P.append(E[i])
     return E_P
 
-
-# In[6]:
 
 
 n_iter = 5
@@ -96,10 +87,6 @@ for i in G.edges:
 five_folds = model_selection.KFold(n_splits=n_iter,shuffle=True, random_state=0)
 
 
- 
-
-
-# In[7]:
 
 
 AUC_sum = 0
@@ -150,10 +137,6 @@ print('AA', aa_sum/n_iter)
     
     
 
-
-# In[5]:
-
-
 from scipy import sparse
 G = nx.Graph(train_edges)
 
@@ -168,9 +151,6 @@ ones = np.zeros(N) + 1
 C = np.block([[A,I-D],[I,np.zeros([N,N])]])
 lam = np.amax(np.linalg.eigvals(C))
 print(1/lam)
-
-
-# In[ ]:
 
 
 
