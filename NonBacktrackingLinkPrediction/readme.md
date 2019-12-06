@@ -5,5 +5,5 @@ With the explosion of network data, link prediction has become a fruitful area o
 
 ![Image description](BA.png)
 
-![Radius of convergence](radianceofconvergence3.png)
+![Radius of convergence](radiusofconvergence3.png)
 
