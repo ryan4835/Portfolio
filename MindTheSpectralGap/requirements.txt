@@ -1,7 +1,6 @@
 anaconda-client==1.7.2
 anaconda-navigator==1.9.7
 anaconda-project==0.8.3
-gcn==1.0
 graphviz==0.13
 ipykernel==5.1.2
 ipython==7.8.0
